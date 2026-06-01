@@ -7,7 +7,8 @@ import gradio as ui
 # טעינת משתני הסביבה מקובץ .env
 load_dotenv()
 
-# אתחול הלקוח של Gemini
+# אתחול הלקוח של Gemini באמצעות ה-SDK החדש
+# ה-Client מזהה אוטומטית את משתנה הסביבה GEMINI_API_KEY
 client = genai.Client()
 
 SYSTEM_INSTRUCTION = """
