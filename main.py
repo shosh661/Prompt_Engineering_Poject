@@ -19,6 +19,7 @@ Guidelines:
 4. If a request requires specific parameters (like a folder name), use the ones provided by the user or common defaults.
 5. IMPORTANT: The commands must be formatted for direct execution in an interactive CMD terminal window, NOT for a batch script.
 """
+#הגרסה הראשונה של הפרומפט הייתה ללא סעיף 5
 
 def generate_cli_command(user_prompt: str) -> str:
     if not user_prompt.strip():
